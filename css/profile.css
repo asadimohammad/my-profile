@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    background: url("../images/492194-programming-languages.jpeg") no-repeat;
+}
+
+.container {
+
+    width: 100vw;
+    min-height: 680px;
+    color: rgb(230, 230, 230);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4.5rem auto;
+}
+
+
+.menu {
+    margin-right: 2rem;
+    margin-top: 0;
+}
+
+.main-nav {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.main-nav li a {
+    display: block;
+    color: seashell;
+    text-decoration: none;
+    padding: 14px 10px;
+}
+
+.menu .main-nav li {
+    width: 150px;
+    margin-bottom: 8px;
+    background-color: #08aeac;
+    list-style: none;
+    position: relative;
+}
+
+.main-nav li::before  {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background-color: #f6c90e;
+    transition: all 0.5s ease;
+}
+
+.main-nav li:hover::before {
+    opacity: 1;
+    width: 100%;
+}
+.content{
+    position: relative;
+    min-width: 50vw;
+}
+.card {
+    width: 90%;
+    height: 300px;
+    border-radius: 6px;
+    background-color: #f2f2f2;
+    display: flex;
+    color: #000;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    z-index: 1000;
+}
+.img-profile{
+    display: flex;
+    justify-content: center;
+}
+.img-profile img{
+    width: 30%;
+    border-radius: 50%;
+    border: 3px solid #4d4d4d;
+    margin-top: 2rem;
+}
+.intro{
+    text-align: center;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.intro span{
+    color: #08aeab;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.intro span.title{
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    background-color: saddlebrown;
+    border-radius: 15px;
+}
+.resume{
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.skills{
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.portfolio{
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.blog{
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.contact{
+    position: absolute;
+    width: 45vw;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+@keyframes effect-div {
+    0%{
+        transform: scale(0.2);
+    }
+    75%{
+        transform: scale(1.2)
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.d-block{
+    display: block;
+}
